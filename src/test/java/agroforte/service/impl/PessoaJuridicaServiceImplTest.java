@@ -1,4 +1,4 @@
-package service.impl;
+package agroforte.service.impl;
 
 import agroforte.dto.PessoaJuridicaDTO;
 import agroforte.model.PessoaJuridica;
