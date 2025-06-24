@@ -31,6 +31,8 @@ public class OperacaoDTO {
     @NotNull(message = "Data da primeira parcela é obrigatória")
     private LocalDate dataPrimeiraParcela;
 
+    @NotNull(message = "Tempo de carência é obrigatório")
+    @Min(value = 0, message = "Tempo de carência não pode ser negativo")
     private Integer tempoCarencia; // em meses
 
     @NotNull(message = "Valor da operação é obrigatório")
