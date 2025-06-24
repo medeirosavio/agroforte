@@ -1,10 +1,12 @@
 package agroforte.model;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.PrimaryKeyJoinColumn;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 
 @Entity
+@PrimaryKeyJoinColumn(name = "id")
 @Getter
 @Setter
 @NoArgsConstructor
