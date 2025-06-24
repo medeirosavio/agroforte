@@ -2,6 +2,7 @@ package agroforte.model;
 
 import jakarta.persistence.*;
 import lombok.*;
+import lombok.experimental.SuperBuilder;
 
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
@@ -9,6 +10,7 @@ import lombok.*;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@SuperBuilder
 public abstract class Pessoa {
 
     @Id
