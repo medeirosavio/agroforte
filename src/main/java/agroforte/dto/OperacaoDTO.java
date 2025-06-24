@@ -5,6 +5,7 @@ import lombok.*;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.List;
 
 @Getter
 @Setter
@@ -42,4 +43,6 @@ public class OperacaoDTO {
 
     @NotNull(message = "ID da pessoa é obrigatório")
     private Long pessoaId;
+
+    private List<ParcelaDTO> parcelas;
 }

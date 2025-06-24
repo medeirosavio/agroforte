@@ -12,6 +12,9 @@ public class PessoaJuridicaDTO {
 
     private Long id;
 
+    @NotBlank(message = "Nome fantasia é obrigatório")
+    private String nome;
+
     @NotBlank(message = "Razão social é obrigatória")
     private String razaoSocial;
 
@@ -31,4 +34,3 @@ public class PessoaJuridicaDTO {
 
     private String nacionalidade;
 }
-
