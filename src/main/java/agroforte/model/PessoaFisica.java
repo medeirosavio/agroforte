@@ -1,12 +1,14 @@
 package agroforte.model;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.PrimaryKeyJoinColumn;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 
 import java.time.LocalDate;
 
 @Entity
+@PrimaryKeyJoinColumn(name = "id")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -21,4 +23,5 @@ public class PessoaFisica extends Pessoa {
     private LocalDate dataNascimento;
     private String nomeMae;
 }
+
 
